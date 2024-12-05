@@ -7,7 +7,7 @@
     "start": "node --env-file=.env dist/index.js",
     "build": "rm -rf ./dist && rollup -c",
     "watch": "rollup -cw",
-    "dev": "unset DATABASE_URL && unset SUPABASE_ANON && unset SUPABASE_SERVICE_ROLE && unset SUPABASE_PROJECT_ID && unset SUPABASE_JWT_SERCET && unset SUPABASE_URL && tsx --env-file=.env --watch src/index.mts",
+    "dev": "tsx --env-file=.env --watch src/index.mts",
     "test": "vitest",
     "format": "prettier --write .",
     "tsc": "tsc"
